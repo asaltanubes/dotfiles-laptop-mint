@@ -1,0 +1,99 @@
+1787518707: 🚀 Tauri app setup started
+1787518707: 🔍 DEBUG: Setup completed
+1787518707: 🚀 Starting bundled backend in background
+1787518707: 🚀 start_backend() called - Attempting to start backend with bundled JRE...
+1787518707: ☁️ Running in SaaS mode - starting local backend
+1787518707: 🔍 Resource directory: "/usr/lib/Stirling PDF"
+1787518707: ✅ Found bundled JRE: "/usr/lib/Stirling PDF/runtime/jre/bin/java"
+1787518707: 📋 Selected JAR: "stirling-pdf-2.14.3.jar"
+1787518707: 📦 Found JAR file: "/usr/lib/Stirling PDF/libs/stirling-pdf-2.14.3.jar"
+1787518707: 📦 Normalized JAR path: "/usr/lib/Stirling PDF/libs/stirling-pdf-2.14.3.jar"
+1787518707: 📦 Normalized Java path: "/usr/lib/Stirling PDF/runtime/jre/bin/java"
+1787518707: 📁 App data directory: /home/asaltanubes/.config/Stirling-PDF
+1787518707: 📁 Log directory: /home/asaltanubes/.config/Stirling-PDF/logs
+1787518707: 📁 Working directory: /home/asaltanubes/.config/Stirling-PDF
+1787518707: 📁 Config directory: /home/asaltanubes/.config/Stirling-PDF/configs
+1787518707: 🔧 Equivalent command: TAURI_PARENT_PID=3957 "/usr/lib/Stirling PDF/runtime/jre/bin/java" -Xmx2g -DBROWSER_OPEN=false -DSTIRLING_PDF_TAURI_MODE=true -Dlogging.file.path=/home/asaltanubes/.config/Stirling-PDF/logs -Dlogging.file.name=stirling-pdf.log -Dserver.port=0 -Dserver.forward-headers-strategy=none -Dsecurity.enableLogin=false -Dsecurity.csrfDisabled=true -jar /usr/lib/Stirling PDF/libs/stirling-pdf-2.14.3.jar
+1787518707: 📁 Backend logs will be in: /home/asaltanubes/.config/Stirling-PDF/logs
+1787518707: ⚙️ Starting backend with bundled JRE...
+1787518707: ✅ Backend started with bundled JRE, monitoring output...
+1787518707: ✅ Backend startup sequence completed, starting flag cleared
+1787518710: 📂 Returning and clearing 0 opened file(s)
+1787518710: 📤 Backend: 22:58:30.146 [main] INFO  s.software.SPDF.SPDFApplication - Without additional features in jar
+1787518710: 📤 Backend: 22:58:30.152 [main] INFO  s.s.c.c.ConfigInitializer - Current settings file line count: 0
+1787518710: 📤 Backend: 22:58:30.161 [main] INFO  s.s.c.c.ConfigInitializer - Created settings file from template
+1787518710: 📤 Backend: 22:58:30.162 [main] INFO  s.s.c.c.ConfigInitializer - Created custom_settings file: ./configs/custom_settings.yml
+1787518710: 📤 Backend: 22:58:30.162 [main] INFO  s.software.SPDF.SPDFApplication - Settings file: ./configs/settings.yml
+1787518710: 📤 Backend: 22:58:30.163 [main] INFO  s.software.SPDF.SPDFApplication - Custom settings file: ./configs/custom_settings.yml
+1787518710: 🚀 start_backend() called - Attempting to start backend with bundled JRE...
+1787518710: ☁️ Running in SaaS mode - starting local backend
+1787518710: ⚠️ Backend process already running, skipping start
+1787518711: 📤 Backend:  ____ _____ ___ ____  _     ___ _   _  ____       ____  ____  _____
+1787518711: 📤 Backend: / ___|_   _|_ _|  _ \| |   |_ _| \ | |/ ___|     |  _ \|  _ \|  ___|
+1787518711: 📤 Backend: \___ \ | |  | || |_) | |    | ||  \| | |  _ _____| |_) | | | | |_
+1787518711: 📤 Backend:  ___) || |  | ||  _ <| |___ | || |\  | |_| |_____|  __/| |_| |  _|
+1787518711: 📤 Backend: |____/ |_| |___|_| \_\_____|___|_| \_|\____|     |_|   |____/|_|
+1787518711: 📤 Backend: Powered by Spring Boot 4.0.6
+1787518711: 📤 Backend: 22:58:31.765 [main] INFO  s.software.SPDF.SPDFApplication - Starting SPDFApplication v2.14.3 using Java 25.0.3 with PID 4019 (/usr/lib/Stirling PDF/libs/stirling-pdf-2.14.3.jar started by asaltanubes in /home/asaltanubes/.config/Stirling-PDF)
+1787518711: 📤 Backend: 22:58:31.767 [main] INFO  s.software.SPDF.SPDFApplication - The following 1 profile is active: "default"
+1787518716: 📤 Backend: 22:58:36.714 [main] INFO  s.s.S.config.MultipartConfiguration - Using default multipart file upload limit: 2000MB
+1787518717: 📤 Backend: 22:58:37.314 [main] INFO  s.software.SPDF.SPDFApplication - Running in Tauri mode. Parent process PID: 3957
+1787518717: 📤 Backend: 22:58:37.319 [main] INFO  s.s.c.config.TempFileConfiguration - Created temporary directory: /tmp/stirling-pdf
+1787518717: 📤 Backend: 22:58:37.352 [main] INFO  s.s.c.c.RuntimePathConfig - Registered watched folder path: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+1787518717: 📤 Backend: 22:58:37.353 [main] INFO  s.s.c.c.RuntimePathConfig - Using Tesseract data path: /usr/share/tesseract-ocr/5/tessdata
+1787518717: 📤 Backend: 22:58:37.379 [virtual-62] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: qpdf - Disabling group: qpdf (Affected features: Repair, Compress PDF)
+1787518717: 📤 Backend: 22:58:37.379 [virtual-56] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: tesseract - Disabling group: tesseract (Affected features: Ocr PDF)
+1787518717: 📤 Backend: 22:58:37.379 [virtual-59] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: ocrmypdf - Disabling group: OCRmyPDF (Affected features: Ocr PDF)
+1787518717: 📤 Backend: 22:58:37.379 [virtual-54] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: rar - Disabling group: rar (Affected features: PDF To Cbr)
+1787518717: 📤 Backend: 22:58:37.383 [virtual-76] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: ebook-convert - Disabling group: Calibre (Affected features: PDF To Epub)
+1787518717: 📤 Backend: 22:58:37.383 [virtual-68] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: magick - Disabling group: ImageMagick (Affected features: Compress PDF)
+1787518717: 📤 Backend: 22:58:37.384 [virtual-74] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: unoconvert - Disabling group: Unoconvert (Affected features: File To PDF)
+1787518717: 📤 Backend: 22:58:37.385 [virtual-64] WARN  s.s.SPDF.config.ExternalAppDepConfig - Missing dependency: weasyprint - Disabling group: Weasyprint (Affected features: Eml To PDF, Markdown To PDF, Url To PDF, Html To PDF)
+1787518717: 📤 Backend: 22:58:37.555 [main] WARN  s.s.SPDF.config.ExternalAppDepConfig - OpenCV not available in Python - Disabling OpenCV features: Extract Image Scans
+1787518717: 📤 Backend: 22:58:37.560 [main] INFO  s.s.S.config.EndpointConfiguration - Disabled tool groups: Calibre, ImageMagick, OCRmyPDF, OpenCV, Unoconvert, Weasyprint, qpdf, rar, tesseract (endpoints may have alternative implementations)
+1787518717: 📤 Backend: 22:58:37.561 [main] INFO  s.s.S.config.EndpointConfiguration - Disabled functional groups: enterprise
+1787518717: 📤 Backend: 22:58:37.561 [main] INFO  s.s.S.config.EndpointConfiguration - Total disabled endpoints: 7. Disabled endpoints: eml-to-pdf, extract-image-scans, html-to-pdf, ocr-pdf, pdf-to-cbr, pdf-to-epub, url-to-pdf
+1787518718: 📤 Backend: 22:58:38.025 [main] INFO  s.s.SPDF.config.TauriProcessMonitor - Tauri mode detected. Parent process ID: 3957
+1787518718: 📤 Backend: 22:58:38.027 [main] INFO  s.s.SPDF.config.TauriProcessMonitor - Started monitoring parent Tauri process (PID: 3957)
+1787518718: 📤 Backend: 22:58:38.277 [main] INFO  s.s.c.c.i.InProcessClusterConfiguration - Cluster backplane: in-process (single node)
+1787518718: 📤 Backend: 22:58:38.294 [main] INFO  s.s.S.s.PdfJsonFallbackFontService - Using fallback font location: classpath:/static/fonts/NotoSans-Regular.ttf
+1787518718: 📤 Backend: 22:58:38.296 [main] INFO  s.s.S.s.pdfjson.PdfJsonFontService - [FONT-DEBUG] CFF conversion enabled, checking tool availability...
+1787518718: 📤 Backend: 22:58:38.299 [main] WARN  s.s.S.s.pdfjson.PdfJsonFontService - [FONT-DEBUG] Python command '/opt/venv/bin/python3' not found; Python CFF conversion disabled
+1787518718: 📤 Backend: 22:58:38.301 [main] WARN  s.s.S.s.pdfjson.PdfJsonFontService - [FONT-DEBUG] FontForge command 'fontforge' not found; FontForge CFF conversion disabled
+1787518718: 📤 Backend: 22:58:38.301 [main] INFO  s.s.S.s.pdfjson.PdfJsonFontService - [FONT-DEBUG] Selected CFF converter method: python
+1787518719: 📤 Backend: 22:58:39.018 [main] INFO  s.s.S.s.p.t.library.Type3FontLibrary - [TYPE3] Loaded 61 Type3 library entries (signatures=81, aliases=64) from classpath:/type3/library/index.json
+1787518719: 📤 Backend: 22:58:39.226 [main] INFO  s.s.SPDF.service.VeraPDFService - VeraPDF Greenfield initialized successfully
+1787518719: 📤 Backend: 22:58:39.350 [main] INFO  s.s.c.service.MobileScannerService - Mobile scanner temp directory: /tmp/stirling-mobile-scanner
+1787518720: 📤 Backend: 22:58:40.087 [main] INFO  s.s.S.s.CertificateValidationService - Loading certificates from Java system trust store
+1787518720: 📤 Backend: 22:58:40.111 [main] INFO  s.s.S.s.CertificateValidationService - Loaded 121 CA certificates from Java system trust store
+1787518720: 📤 Backend: 22:58:40.112 [main] INFO  s.s.S.s.CertificateValidationService - Loading bundled Mozilla CA certificates from resources
+1787518720: 📤 Backend: 22:58:40.132 [main] INFO  s.s.S.c.web.ReactRoutingController - Static files custom path: ./customFiles/static/
+1787518720: 📤 Backend: 22:58:40.206 [main] INFO  s.s.c.service.TempFileCleanupService - Created LibreOffice temp directory: /tmp/stirling-pdf/libreoffice
+1787518720: 📤 Backend: 22:58:40.207 [main] INFO  s.s.c.service.TempFileCleanupService - Running in Server-jar mode, using conservative cleanup strategy
+1787518720: 📤 Backend: 22:58:40.213 [main] INFO  s.s.c.service.TempFileCleanupService - Startup cleanup complete. Deleted 0 temporary files/directories
+1787518720: 📤 Backend: 22:58:40.233 [main] INFO  s.software.common.util.FileMonitor - Monitoring directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+1787518720: 📤 Backend: 22:58:40.453 [main] INFO  s.software.SPDF.config.WebMvcConfig - Tauri mode detected - enabling CORS for Tauri protocols (v1 and v2)
+1787518721: 📤 Backend: 22:58:41.108 [main] WARN  i.m.c.i.binder.jvm.JvmGcMetrics - GC notifications will not be available because com.sun.management.GarbageCollectionNotificationInfo is not present
+1787518721: 📤 Backend: 22:58:41.109 [main] WARN  i.m.c.i.binder.jvm.JvmGcMetrics - GC notifications will not be available because no GarbageCollectorMXBean of the JVM provides any. GCs=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+1787518721: 📤 Backend: 22:58:41.210 [main] INFO  s.software.common.service.JobQueue - Starting JobQueue lifecycle
+1787518721: 📤 Backend: 22:58:41.262 [main] INFO  s.software.SPDF.SPDFApplication - Started SPDFApplication in 11.095 seconds (process running for 13.648)
+1787518721: 🎉 Backend startup completed: 22:58:41.262 [main] INFO  s.software.SPDF.SPDFApplication - Started SPDFApplication in 11.095 seconds (process running for 13.648)
+1787518721: 📤 Backend: 22:58:41.270 [scheduled-vt-7] WARN  s.software.common.util.FileMonitor - Not monitoring any directories; attempting to re-register root paths.
+1787518721: 📤 Backend: 22:58:41.270 [scheduled-vt-2] INFO  s.s.c.service.TempFileCleanupService - Running scheduled temporary file cleanup
+1787518721: 📤 Backend: 22:58:41.270 [scheduled-vt-5] INFO  s.s.S.c.a.p.PipelineDirectoryProcessor - Created directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+1787518721: 📤 Backend: 22:58:41.272 [scheduled-vt-7] INFO  s.software.common.util.FileMonitor - Registered directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+1787518721: 📤 Backend: 22:58:41.272 [scheduled-vt-2] INFO  s.s.common.util.TempFileManager - Cleaned up 0 old temporary files
+1787518721: 📤 Backend: 22:58:41.272 [scheduled-vt-2] INFO  s.s.c.service.TempFileCleanupService - Cleaned up 0 registered temporary files
+1787518721: 📤 Backend: 22:58:41.277 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /v1/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+1787518721: 📤 Backend: 22:58:41.277 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+1787518721: 📤 Backend: 22:58:41.278 [main] INFO  s.software.SPDF.SPDFApplication - Stirling-PDF running on port: 40479
+1787518721: 🎉 Backend started on port: 40479
+1787518721: 🔌 Navigate to: http://127.0.0.1:40479/
+1787518721: 📤 Backend: 22:58:41.279 [main] INFO  s.software.SPDF.SPDFApplication - Stirling-PDF Started.
+1787518721: 📤 Backend: 22:58:41.279 [main] INFO  s.software.SPDF.SPDFApplication - Navigate to http://localhost:40479/
+1787518721: 🔍 Checking if app is default PDF handler
+1787518722: Linux PDF handler: xreader.desktop
+1787518723: 📤 Backend: 22:58:43.081 [jetty-2] WARN  s.s.S.e.GlobalExceptionHandler - No resource at /api/v1/policies: No static resource api/v1/policies for request '/api/v1/policies'.
+1787518729: 🔍 Checking if app is default PDF handler
+1787518729: Linux PDF handler: xreader.desktop
+1787518729: 📤 Backend: 22:58:49.653 [jetty-241] WARN  s.s.S.e.GlobalExceptionHandler - No resource at /api/v1/policies: No static resource api/v1/policies for request '/api/v1/policies'.

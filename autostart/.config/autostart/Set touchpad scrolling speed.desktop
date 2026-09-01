@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=xinput --set-prop "MSFT0001:00 06CB:CE2D Touchpad" "libinput Scrolling Pixel Distance" 40
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[es_ES]=Set touchpad scrolling speed
+Comment[es_ES]=Sin descripción
+X-GNOME-Autostart-Delay=0

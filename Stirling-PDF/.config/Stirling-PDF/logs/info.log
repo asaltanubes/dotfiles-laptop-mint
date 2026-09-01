@@ -1,0 +1,73 @@
+2026-08-23 22:58:30,146 INFO s.s.S.SPDFApplication [main] Without additional features in jar
+2026-08-23 22:58:30,152 INFO s.s.c.c.ConfigInitializer [main] Current settings file line count: 0
+2026-08-23 22:58:30,161 INFO s.s.c.c.ConfigInitializer [main] Created settings file from template
+2026-08-23 22:58:30,162 INFO s.s.c.c.ConfigInitializer [main] Created custom_settings file: ./configs/custom_settings.yml
+2026-08-23 22:58:30,162 INFO s.s.S.SPDFApplication [main] Settings file: ./configs/settings.yml
+2026-08-23 22:58:30,163 INFO s.s.S.SPDFApplication [main] Custom settings file: ./configs/custom_settings.yml
+2026-08-23 22:58:31,765 INFO s.s.S.SPDFApplication [main] Starting SPDFApplication v2.14.3 using Java 25.0.3 with PID 4019 (/usr/lib/Stirling PDF/libs/stirling-pdf-2.14.3.jar started by asaltanubes in /home/asaltanubes/.config/Stirling-PDF)
+2026-08-23 22:58:31,767 INFO s.s.S.SPDFApplication [main] The following 1 profile is active: "default"
+2026-08-23 22:58:36,714 INFO s.s.S.c.MultipartConfiguration [main] Using default multipart file upload limit: 2000MB
+2026-08-23 22:58:37,314 INFO s.s.S.SPDFApplication [main] Running in Tauri mode. Parent process PID: 3957
+2026-08-23 22:58:37,319 INFO s.s.c.c.TempFileConfiguration [main] Created temporary directory: /tmp/stirling-pdf
+2026-08-23 22:58:37,352 INFO s.s.c.c.RuntimePathConfig [main] Registered watched folder path: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+2026-08-23 22:58:37,353 INFO s.s.c.c.RuntimePathConfig [main] Using Tesseract data path: /usr/share/tesseract-ocr/5/tessdata
+2026-08-23 22:58:37,379 WARN s.s.S.c.ExternalAppDepConfig [virtual-62] Missing dependency: qpdf - Disabling group: qpdf (Affected features: Repair, Compress PDF)
+2026-08-23 22:58:37,379 WARN s.s.S.c.ExternalAppDepConfig [virtual-59] Missing dependency: ocrmypdf - Disabling group: OCRmyPDF (Affected features: Ocr PDF)
+2026-08-23 22:58:37,379 WARN s.s.S.c.ExternalAppDepConfig [virtual-56] Missing dependency: tesseract - Disabling group: tesseract (Affected features: Ocr PDF)
+2026-08-23 22:58:37,379 WARN s.s.S.c.ExternalAppDepConfig [virtual-54] Missing dependency: rar - Disabling group: rar (Affected features: PDF To Cbr)
+2026-08-23 22:58:37,383 WARN s.s.S.c.ExternalAppDepConfig [virtual-68] Missing dependency: magick - Disabling group: ImageMagick (Affected features: Compress PDF)
+2026-08-23 22:58:37,383 WARN s.s.S.c.ExternalAppDepConfig [virtual-76] Missing dependency: ebook-convert - Disabling group: Calibre (Affected features: PDF To Epub)
+2026-08-23 22:58:37,384 WARN s.s.S.c.ExternalAppDepConfig [virtual-74] Missing dependency: unoconvert - Disabling group: Unoconvert (Affected features: File To PDF)
+2026-08-23 22:58:37,385 WARN s.s.S.c.ExternalAppDepConfig [virtual-64] Missing dependency: weasyprint - Disabling group: Weasyprint (Affected features: Eml To PDF, Markdown To PDF, Url To PDF, Html To PDF)
+2026-08-23 22:58:37,555 WARN s.s.S.c.ExternalAppDepConfig [main] OpenCV not available in Python - Disabling OpenCV features: Extract Image Scans
+2026-08-23 22:58:37,560 INFO s.s.S.c.EndpointConfiguration [main] Disabled tool groups: Calibre, ImageMagick, OCRmyPDF, OpenCV, Unoconvert, Weasyprint, qpdf, rar, tesseract (endpoints may have alternative implementations)
+2026-08-23 22:58:37,561 INFO s.s.S.c.EndpointConfiguration [main] Disabled functional groups: enterprise
+2026-08-23 22:58:37,561 INFO s.s.S.c.EndpointConfiguration [main] Total disabled endpoints: 7. Disabled endpoints: eml-to-pdf, extract-image-scans, html-to-pdf, ocr-pdf, pdf-to-cbr, pdf-to-epub, url-to-pdf
+2026-08-23 22:58:38,025 INFO s.s.S.c.TauriProcessMonitor [main] Tauri mode detected. Parent process ID: 3957
+2026-08-23 22:58:38,027 INFO s.s.S.c.TauriProcessMonitor [main] Started monitoring parent Tauri process (PID: 3957)
+2026-08-23 22:58:38,277 INFO s.s.c.c.i.InProcessClusterConfiguration [main] Cluster backplane: in-process (single node)
+2026-08-23 22:58:38,294 INFO s.s.S.s.PdfJsonFallbackFontService [main] Using fallback font location: classpath:/static/fonts/NotoSans-Regular.ttf
+2026-08-23 22:58:38,296 INFO s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] CFF conversion enabled, checking tool availability...
+2026-08-23 22:58:38,299 WARN s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] Python command '/opt/venv/bin/python3' not found; Python CFF conversion disabled
+2026-08-23 22:58:38,301 WARN s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] FontForge command 'fontforge' not found; FontForge CFF conversion disabled
+2026-08-23 22:58:38,301 INFO s.s.S.s.p.PdfJsonFontService [main] [FONT-DEBUG] Selected CFF converter method: python
+2026-08-23 22:58:39,018 INFO s.s.S.s.p.t.l.Type3FontLibrary [main] [TYPE3] Loaded 61 Type3 library entries (signatures=81, aliases=64) from classpath:/type3/library/index.json
+2026-08-23 22:58:39,226 INFO s.s.S.s.VeraPDFService [main] VeraPDF Greenfield initialized successfully
+2026-08-23 22:58:39,350 INFO s.s.c.s.MobileScannerService [main] Mobile scanner temp directory: /tmp/stirling-mobile-scanner
+2026-08-23 22:58:40,087 INFO s.s.S.s.CertificateValidationService [main] Loading certificates from Java system trust store
+2026-08-23 22:58:40,111 INFO s.s.S.s.CertificateValidationService [main] Loaded 121 CA certificates from Java system trust store
+2026-08-23 22:58:40,112 INFO s.s.S.s.CertificateValidationService [main] Loading bundled Mozilla CA certificates from resources
+2026-08-23 22:58:40,132 INFO s.s.S.c.w.ReactRoutingController [main] Static files custom path: ./customFiles/static/
+2026-08-23 22:58:40,206 INFO s.s.c.s.TempFileCleanupService [main] Created LibreOffice temp directory: /tmp/stirling-pdf/libreoffice
+2026-08-23 22:58:40,207 INFO s.s.c.s.TempFileCleanupService [main] Running in Server-jar mode, using conservative cleanup strategy
+2026-08-23 22:58:40,213 INFO s.s.c.s.TempFileCleanupService [main] Startup cleanup complete. Deleted 0 temporary files/directories
+2026-08-23 22:58:40,233 INFO s.s.c.u.FileMonitor [main] Monitoring directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+2026-08-23 22:58:40,453 INFO s.s.S.c.WebMvcConfig [main] Tauri mode detected - enabling CORS for Tauri protocols (v1 and v2)
+2026-08-23 22:58:41,108 WARN i.m.c.i.b.j.JvmGcMetrics [main] GC notifications will not be available because com.sun.management.GarbageCollectionNotificationInfo is not present
+2026-08-23 22:58:41,109 WARN i.m.c.i.b.j.JvmGcMetrics [main] GC notifications will not be available because no GarbageCollectorMXBean of the JVM provides any. GCs=[G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+2026-08-23 22:58:41,210 INFO s.s.c.s.JobQueue [main] Starting JobQueue lifecycle
+2026-08-23 22:58:41,262 INFO s.s.S.SPDFApplication [main] Started SPDFApplication in 11.095 seconds (process running for 13.648)
+2026-08-23 22:58:41,270 WARN s.s.c.u.FileMonitor [scheduled-vt-7] Not monitoring any directories; attempting to re-register root paths.
+2026-08-23 22:58:41,270 INFO s.s.c.s.TempFileCleanupService [scheduled-vt-2] Running scheduled temporary file cleanup
+2026-08-23 22:58:41,270 INFO s.s.S.c.a.p.PipelineDirectoryProcessor [scheduled-vt-5] Created directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+2026-08-23 22:58:41,272 INFO s.s.c.u.FileMonitor [scheduled-vt-7] Registered directory: /home/asaltanubes/.config/Stirling-PDF/pipeline/watchedFolders
+2026-08-23 22:58:41,272 INFO s.s.c.u.TempFileManager [scheduled-vt-2] Cleaned up 0 old temporary files
+2026-08-23 22:58:41,272 INFO s.s.c.s.TempFileCleanupService [scheduled-vt-2] Cleaned up 0 registered temporary files
+2026-08-23 22:58:41,277 WARN o.s.c.e.SpringDocAppInitializer [main] SpringDoc /v1/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-08-23 22:58:41,277 WARN o.s.c.e.SpringDocAppInitializer [main] SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-08-23 22:58:41,278 INFO s.s.S.SPDFApplication [main] Stirling-PDF running on port: 40479
+2026-08-23 22:58:41,279 INFO s.s.S.SPDFApplication [main] Stirling-PDF Started.
+2026-08-23 22:58:41,279 INFO s.s.S.SPDFApplication [main] Navigate to http://localhost:40479/
+2026-08-23 22:58:43,081 WARN s.s.S.e.GlobalExceptionHandler [jetty-2] No resource at /api/v1/policies: No static resource api/v1/policies for request '/api/v1/policies'.
+2026-08-23 22:58:49,653 WARN s.s.S.e.GlobalExceptionHandler [jetty-241] No resource at /api/v1/policies: No static resource api/v1/policies for request '/api/v1/policies'.
+2026-08-23 22:59:38,027 WARN s.s.S.c.TauriProcessMonitor [tauri-process-monitor] Parent Tauri process (PID: 3957) is no longer alive. Initiating graceful shutdown...
+2026-08-23 22:59:38,029 INFO s.s.S.c.TauriProcessMonitor [tauri-process-monitor] Orphaned Java backend detected. Shutting down gracefully...
+2026-08-23 22:59:39,050 INFO s.s.c.s.JobQueue [tauri-graceful-shutdown] Stopping JobQueue lifecycle
+2026-08-23 22:59:39,050 INFO s.s.c.s.JobQueue [tauri-graceful-shutdown] Shutting down job queue
+2026-08-23 22:59:39,051 INFO s.s.c.s.JobQueue [tauri-graceful-shutdown] Job queue shutdown complete. Stats: total=0, rejected=0
+2026-08-23 22:59:39,055 INFO s.s.c.c.TempFileShutdownHook [tauri-graceful-shutdown] Application shutting down, cleaning up temporary files
+2026-08-23 22:59:39,056 INFO s.s.c.c.TempFileShutdownHook [tauri-graceful-shutdown] Shutdown cleanup complete. Deleted 0 temporary files/directories
+2026-08-23 22:59:39,056 INFO s.s.c.s.ResourceMonitor [tauri-graceful-shutdown] Shutting down resource monitoring
+2026-08-23 22:59:39,057 INFO s.s.c.s.TaskManager [tauri-graceful-shutdown] Shutting down job result cleanup executor
+2026-08-23 22:59:39,058 INFO s.s.S.c.TauriProcessMonitor [tauri-graceful-shutdown] Shutting down Tauri process monitor
+2026-08-23 22:59:39,113 INFO s.s.c.c.TempFileShutdownHook [Thread-1] Shutdown cleanup complete. Deleted 0 temporary files/directories

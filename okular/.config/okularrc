@@ -1,0 +1,19 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1603x902 screen: Height=831
+1603x902 screen: Width=801
+1603x902 screen: XPosition=801
+1603x902 screen: YPosition=27
+State=AAAA/wAAAAD9AAAAAQAAAAAAAABaAAADBfwCAAAAAfsAAAAcAG8AawB1AGwAYQByAF8AcwBpAGQAZQBiAGEAcgEAAAA6AAADBQAAAOsA///+AAACwQAAAwUAAAAEAAAABAAAAAgAAAAI/AAAAAMAAAABAAAAAQAAACwAcQB1AGkAYwBrAEEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgIAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP=eDP
+
+[Recent Files]
+File1[$e]=$HOME/Documentos/doctorado/ned-duality-distance/calF-new-term/main.pdf
+Name1[$e]=main.pdf

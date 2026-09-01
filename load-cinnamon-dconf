@@ -1,0 +1,1 @@
+dconf load /org/cinnamon/ < ~/dotfiles/cinnamon/cinnamon-settings.dconf

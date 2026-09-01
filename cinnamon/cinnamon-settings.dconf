@@ -1,0 +1,162 @@
+[/]
+alttab-switcher-delay=100
+desklet-snap-interval=25
+device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=LGC L20L2PF0']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:3:systray@cinnamon.org:3', 'panel1:right:4:xapp-status@cinnamon.org:4', 'panel1:right:5:notifications@cinnamon.org:5', 'panel1:right:6:printers@cinnamon.org:6', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel1:right:8:keyboard@cinnamon.org:8', 'panel1:right:9:favorites@cinnamon.org:9', 'panel1:right:10:network@cinnamon.org:10', 'panel1:right:11:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:right:14:cornerbar@cinnamon.org:14', 'panel1:right:0:combined-monitor@danipin:17']
+enabled-desklets=['googleCalendar@javahelps.com:3:1450:925']
+enabled-extensions=@as []
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+next-applet-id=18
+next-desklet-id=5
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 40, "center": 28, "right": 22}]'
+panel-zone-text-sizes='[{"panelId": 1, "left": 0.0, "center": 0.0, "right": 9.0}]'
+panels-height=['1:53']
+startup-animation=true
+window-effect-speed=1
+workspace-osd-visible=true
+
+[cinnamon-session]
+quit-time-delay=60
+
+[desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+
+[desktop/a11y/magnifier]
+mag-factor=9.0811919102123859
+
+[desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
+
+[desktop/applications/calculator]
+exec='gnome-calculator'
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+exec-arg='--'
+
+[desktop/background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/my-wallpapers/background.png'
+
+[desktop/background/slideshow]
+delay=15
+image-source='directory:///home/asaltanubes/Imágenes'
+slideshow-enabled=true
+slideshow-paused=false
+
+[desktop/input-sources]
+sources=[('xkb', 'es+winkeys')]
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='Bibata-Modern-Classic'
+gtk-enable-primary-paste=false
+gtk-theme='Mint-Y-Dark-Teal'
+gtk-theme-backup='Mint-Y-Dark-Teal'
+icon-theme='We10X'
+icon-theme-backup='We10X'
+text-scaling-factor=1.2000000000000002
+toolkit-accessibility=false
+
+[desktop/keybindings]
+custom-list=['custom0']
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Shift><Super>s']
+command='gnome-screenshot -a'
+name='Captura de pantalla'
+
+[desktop/keybindings/media-keys]
+terminal=['<Primary><Alt>t', 'Help']
+volume-up=['AudioRaiseVolume']
+
+[desktop/keybindings/wm]
+show-desktop=['<Super>d', '<Super>m']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/notifications]
+notification-duration=4
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+numlock-state=true
+repeat-interval=uint32 30
+
+[desktop/peripherals/mouse]
+accel-profile='flat'
+double-click=400
+drag-threshold=8
+locate-pointer=false
+speed=1.0
+
+[desktop/peripherals/touchpad]
+speed=0.0
+
+[desktop/privacy]
+remember-recent-files=false
+
+[desktop/screensaver]
+layout-group=0
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+min-window-opacity=30
+theme='Mint-Y'
+theme-backup='Mint-Y'
+
+[gestures]
+enabled=true
+pinch-percent-threshold=uint32 40
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_DESKTOP::::end'
+swipe-down-4='TOGGLE_DESKTOP::50::end'
+swipe-left-2='EXEC::xdotool key alt+shift+Tab::start'
+swipe-left-3='WORKSPACE_NEXT::end'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-percent-threshold=uint32 20
+swipe-right-2='EXEC::xdotool key alt+Tab::start'
+swipe-right-3='WORKSPACE_PREVIOUS::end'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::xdotool key alt+Tab::end'
+swipe-up-3='TOGGLE_EXPO::end'
+swipe-up-4='MAXIMIZE::50::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[launcher]
+check-frequency=300
+memory-limit=2048
+
+[muffin]
+draggable-border-width=10
+experimental-features=@as []
+workspace-cycle=false
+
+[muffin/x11]
+fractional-scale-mode='scale-ui-down'
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(40.399999999999999, -3.6833330000000002)
+
+[settings-daemon/plugins/power]
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[theme]
+name='Windows-10-Basic'
