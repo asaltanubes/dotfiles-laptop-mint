@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=xinput --set-prop "MSFT0001:00 06CB:CE2D Touchpad" "libinput Tapping Drag Lock Enabled" 1
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[es_ES]=Set drag lock
+Comment[es_ES]=Hace que al arrastrar algo el touchpad lo aguante un poco más antes de soltarlo
+X-GNOME-Autostart-Delay=0

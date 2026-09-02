@@ -5,5 +5,5 @@ X-GNOME-Autostart-enabled=true
 NoDisplay=false
 Hidden=false
 Name[es_ES]=Set touchpad scrolling speed
-Comment[es_ES]=Sin descripción
+Comment[es_ES]=pone la velocidad del touchpad al mover con los dos dedos
 X-GNOME-Autostart-Delay=0
