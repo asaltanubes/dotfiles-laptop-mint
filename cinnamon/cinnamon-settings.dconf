@@ -48,8 +48,8 @@ picture-uri='file:///usr/share/backgrounds/my-wallpapers/background.png'
 
 [desktop/background/slideshow]
 delay=15
-image-source='directory:///home/asaltanubes/Imágenes'
-slideshow-enabled=true
+image-source='directory:///usr/share/backgrounds/my-wallpapers'
+slideshow-enabled=false
 slideshow-paused=false
 
 [desktop/input-sources]
