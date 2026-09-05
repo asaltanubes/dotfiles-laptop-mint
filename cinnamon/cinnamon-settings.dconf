@@ -20,6 +20,9 @@ workspace-osd-visible=true
 [cinnamon-session]
 quit-time-delay=60
 
+[desktop/a11y/applications]
+screen-keyboard-enabled=true
+
 [desktop/a11y/keyboard]
 bouncekeys-delay=300
 mousekeys-accel-time=300
@@ -44,7 +47,7 @@ exec-arg='--'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/my-wallpapers/background.png'
+picture-uri='file:///usr/share/backgrounds/my-wallpapers/mountain-snow-minima.jpg'
 
 [desktop/background/slideshow]
 delay=15
@@ -65,7 +68,7 @@ gtk-theme-backup='Mint-Y-Dark-Teal'
 icon-theme='We10X'
 icon-theme-backup='We10X'
 text-scaling-factor=1.2000000000000002
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [desktop/keybindings]
 custom-list=['custom0']
@@ -157,6 +160,10 @@ sleep-display-ac=1800
 sleep-display-battery=1800
 sleep-inactive-ac-timeout=0
 sleep-inactive-battery-timeout=0
+
+[sounds]
+switch-enabled=false
+tile-enabled=false
 
 [theme]
 name='Windows-10-Basic'

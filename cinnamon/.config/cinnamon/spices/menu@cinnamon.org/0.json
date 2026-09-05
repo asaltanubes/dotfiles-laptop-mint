@@ -280,7 +280,7 @@
         "units": "px",
         "description": "Sidebar icon size",
         "dependency": "show-sidebar",
-        "value": 8.0
+        "value": 8
     },
     "sidebar-max-width": {
         "type": "spinbutton",
@@ -356,12 +356,12 @@
     "popup-width": {
         "type": "generic",
         "default": 665,
-        "value": 665
+        "value": 695.6815795898438
     },
     "popup-height": {
         "type": "generic",
         "default": 425,
-        "value": 425
+        "value": 522.6044921875
     },
     "reset-menu-size-button": {
         "type": "button",
