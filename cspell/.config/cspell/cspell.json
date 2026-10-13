@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en, es, es_ES",
+  "import": [
+    "~/dotfiles/cspell/dict-es-es/cspell-ext.json"
+  ],
+  "dictionaries": [
+    "custom"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom",
+      "path": "~/dotfiles/cspell/cspell_dict.txt",
+      "addWords": true
+    }
+  ],
+  "enabledFileTypes": {
+    "*": false,
+    "typst": true
+  }
+}

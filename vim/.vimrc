@@ -11,4 +11,5 @@ set laststatus=2
 " make text too long spand multiple lines
 set wrap
 
-
+" autocomlpete
+set omnifunc=syntaxcomplete#Complete
