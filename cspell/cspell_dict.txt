@@ -1,2 +1,4 @@
 
 physica
+linearities
+Bianchi

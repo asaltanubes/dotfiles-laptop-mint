@@ -2,4 +2,5 @@ theme="ayu_dark"
 
 [editor]
 line-number="relative"
+idle-timeout=0
 
