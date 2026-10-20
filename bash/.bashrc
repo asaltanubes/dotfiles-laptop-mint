@@ -139,4 +139,5 @@ esac
 # If we have a connection but the internet doesn't work it is because of a bug on NetworkManager and has to be 
 # reestarted.
 alias fix-wifi="sudo systemctl restart NetworkManager"
+alias typstw="typst watch --open xreader"
 # <<< custom aliases <<<
