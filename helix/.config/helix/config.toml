@@ -4,3 +4,5 @@ theme="ayu_dark"
 line-number="relative"
 idle-timeout=0
 
+[keys.normal.space]
+t = ":lsp-workspace-command tinymist.startDefaultPreview"
