@@ -3,6 +3,13 @@ theme="ayu_dark"
 [editor]
 line-number="relative"
 idle-timeout=0
+bufferline="multiple"
 
-[keys.normal.space]
+[keys.normal]
+"tab" = ":buffer-next"
+"S-tab" = ":buffer-previous"
+"C-q" = ":buffer-close"
+
+[keys.normal.space.t]
 t = ":lsp-workspace-command tinymist.startDefaultPreview"
+r = ":lsp-restart" 
