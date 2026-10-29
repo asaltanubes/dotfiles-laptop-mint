@@ -1,11 +1,19 @@
 [language-server.tinymist]
 command = "tinymist"
-config = {preview.browsing.args = ["--invert-colors=never", "--open"]} 
+config = { preview.browsing.args = [ "--invert-colors=never", "--open" ] } 
 
 [language-server.cspell]
 command = "cspell-lsp"
-args = ["--stdio"]
+args = [ "--stdio" ]
 
 [[language]]
 name = "typst"
-language-servers = ["tinymist", "cspell"]
+language-servers = [ "tinymist", "cspell" ]
+
+[[language]]
+name = "rust"
+auto-format = true
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "clippy" }
+cargo = { allFeatures = true }
