@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ config, pkgs, cspell-lsp, ... }:
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -18,9 +17,15 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
+    pkgs.tmux
+    pkgs.typst
+
+    # Helix editor stuff
+    pkgs.helix
+    pkgs.nil # nix lsp
+    pkgs.texlab # latex lsp
+    pkgs.tinymist # typst lsp
+    cspell-lsp.packages.${pkgs.system}.default # spelling lsp
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -34,6 +39,11 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+     (pkgs.writeShellScriptBin "update-home-manager" ''
+      cd "${config.home.homeDirectory}/.config/home-manager"
+      nix flake update
+      home-manager switch --flake .
+      '')
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -49,6 +59,9 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    "home.nix" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/home.nix";
+    };
   };
 
   # Home Manager can also manage your environment variables through

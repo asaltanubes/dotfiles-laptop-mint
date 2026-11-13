@@ -1,5 +1,39 @@
 {
   "nodes": {
+    "cspell-lsp": {
+      "inputs": {
+        "cspell-lsp-src": "cspell-lsp-src",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792274675,
+        "narHash": "sha256-z0TvnJ9TMBNtViEIJqGiQFQigrTBtQTVNeO9ZBON0oQ=",
+        "owner": "asaltanubes",
+        "repo": "cspell-lsp",
+        "rev": "35783ac2987a06aa08703320a4113f3c9562e684",
+        "type": "github"
+      },
+      "original": {
+        "owner": "asaltanubes",
+        "repo": "cspell-lsp",
+        "type": "github"
+      }
+    },
+    "cspell-lsp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1752872258,
+        "narHash": "sha256-ZLZMVw0uvr4rQ9SKMVj1Sjoj+QeK2UL3RWsnzNRdPwI=",
+        "type": "tarball",
+        "url": "https://github.com/vlabo/cspell-lsp/archive/refs/tags/v1.1.5.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/vlabo/cspell-lsp/archive/refs/tags/v1.1.5.tar.gz"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -38,6 +72,7 @@
     },
     "root": {
       "inputs": {
+        "cspell-lsp": "cspell-lsp",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }
