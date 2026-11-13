@@ -3,3 +3,4 @@ physica
 linearities
 Bianchi
 Minkowski
+ansatz
