@@ -4,6 +4,7 @@ theme="ayu_dark"
 line-number="relative"
 idle-timeout=0
 bufferline="multiple"
+rulers = [84]
 
 [keys.normal]
 "tab" = ":buffer-next"
