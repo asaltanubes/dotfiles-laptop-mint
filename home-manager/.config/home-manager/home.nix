@@ -48,7 +48,7 @@ in
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-     (pkgs.writeShellApplication "update-home-manager" ''
+     (pkgs.writeShellScriptBin "update-home-manager" ''
       cd "${config.home.homeDirectory}/.config/home-manager"
       nix flake update
       home-manager switch --flake .
