@@ -1,5 +1,12 @@
-{ config, pkgs, cspell-lsp, ... }:
-{
+{ config, pkgs, lib, cspell-lsp, ... }:
+let
+  check-hm-updates = pkgs.writeShellApplication {
+    name = "check-hm-updates";
+    runtimeInputs = with pkgs; [ nix coreutils libnotify ];
+    text = builtins.readFile ./scripts/update-check.sh;
+  };
+in
+  {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "asaltanubes";
@@ -17,6 +24,8 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    check-hm-updates # script to check for updates on the packages
+
     pkgs.tmux
     pkgs.typst
 
@@ -25,7 +34,7 @@
     pkgs.nil # nix lsp
     pkgs.texlab # latex lsp
     pkgs.tinymist # typst lsp
-    cspell-lsp.packages.${pkgs.system}.default # spelling lsp
+    cspell-lsp.packages.${pkgs.stdenv.hostPlatform.system}.default # spelling lsp
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -39,7 +48,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-     (pkgs.writeShellScriptBin "update-home-manager" ''
+     (pkgs.writeShellApplication "update-home-manager" ''
       cd "${config.home.homeDirectory}/.config/home-manager"
       nix flake update
       home-manager switch --flake .
@@ -84,6 +93,28 @@
     # EDITOR = "emacs";
   };
 
+  # systemd service to check for updates
+  systemd.user.services.check-hm-updates = {
+    Unit = {
+      Description = "Check for Home Manager updates";
+      StartLimitBurst = 3;
+    };
+    Service = {
+      Type = "oneshot";
+      ExecStart = lib.getExe check-hm-updates;
+      Restart = "on-failure";
+      RestartSec = "5min";
+    };
+  };
+
+  systemd.user.timers.check-hm-updates = {
+    Timer = {
+      OnCalendar = "daily";
+      Persistent = true;
+      RandomizedDelaySec = "5m";
+    };
+    Install.WantedBy = [ "timers.target" ];
+  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
