@@ -18,13 +18,9 @@
   outputs =
     { nixpkgs, home-manager, cspell-lsp, ... }:
     let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      homeConfigurations."asaltanubes" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit cspell-lsp; };
+      mkHome={extraArgs, system?"x86_64-linux"}: home-manager.lib.homeManagerConfiguration {
+        pkgs=nixpkgs.legacyPackages.${system};
+        extraSpecialArgs = { inherit cspell-lsp; } // extraArgs;
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
@@ -33,5 +29,9 @@
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
       };
+    in
+    {
+      homeConfigurations."asaltanubes" = mkHome { };
+      homeConfigurations."asaltanubes@asaltanubes-Lenovo-V15-G2-ALC" = mkHome { isMint = true; };
     };
 }
