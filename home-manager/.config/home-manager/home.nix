@@ -28,6 +28,7 @@ in
 
     pkgs.tmux
     pkgs.typst
+    pkgs.ripgrep
 
     # Helix editor stuff
     pkgs.helix
