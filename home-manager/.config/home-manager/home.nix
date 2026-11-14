@@ -98,21 +98,17 @@ in
   systemd.user.services.check-hm-updates = {
     Unit = {
       Description = "Check for Home Manager updates";
-      StartLimitBurst = 3;
     };
     Service = {
       Type = "oneshot";
       ExecStart = lib.getExe check-hm-updates;
-      Restart = "on-failure";
-      RestartSec = "5min";
     };
   };
 
   systemd.user.timers.check-hm-updates = {
     Timer = {
-      OnCalendar = "daily";
-      Persistent = true;
-      RandomizedDelaySec = "5m";
+      OnStartupSec="5s";
+      RandomicedDelaySec="3s";
     };
     Install.WantedBy = [ "timers.target" ];
   };
