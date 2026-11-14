@@ -18,9 +18,9 @@
   outputs =
     { nixpkgs, home-manager, cspell-lsp, ... }:
     let
-      mkHome={extraArgs, system?"x86_64-linux"}: home-manager.lib.homeManagerConfiguration {
+      mkHome={isMint?false, system?"x86_64-linux"}: home-manager.lib.homeManagerConfiguration {
         pkgs=nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit cspell-lsp; } // extraArgs;
+        extraSpecialArgs = { inherit cspell-lsp isMint; };
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.

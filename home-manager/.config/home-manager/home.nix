@@ -1,4 +1,4 @@
-{ config, pkgs, lib, cspell-lsp, isMint? false, ... }:
+{ config, pkgs, lib, cspell-lsp, isMint, ... }:
 let
   check-hm-updates = pkgs.writeShellApplication {
     name = "check-hm-updates";
@@ -54,14 +54,8 @@ in
       nix flake update
       home-manager switch --flake .
       '')
-  ] ++ lib.list.optionals (!isMint) [ pkgs.xreader ];
+  ] ++ lib.optionals (!isMint) [ pkgs.xreader ];
 
-
-  home.shellAliases = {
-    typstw = "typst watch --open xreader";
-    fix-wifi = "sudo systemctl restart NetworkManager";
-  };
-  
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
