@@ -124,15 +124,15 @@ export PATH="$HOME/.local/bin:$PATH"
 # !! Contents within this block are managed by juliaup !!
 
 case ":$PATH:" in
-    *:/home/asaltanubes/.juliaup/bin:*)
+    *:"${HOME}/.juliaup/bin":*)
         ;;
 
     *)
-        export PATH=/home/asaltanubes/.juliaup/bin${PATH:+:${PATH}}
+        export PATH="${HOME}/.juliaup/bin"${PATH:+:${PATH}}
         ;;
 esac
 # Tab completion for juliaup and julia channel selection
-[ -f "/home/asaltanubes/.julia/juliaup/completions/bash.sh" ] && source "/home/asaltanubes/.julia/juliaup/completions/bash.sh"
+[ -f "${HOME}/.julia/juliaup/completions/bash.sh" ] && source "${HOME}/.julia/juliaup/completions/bash.sh"
 
 # <<< juliaup initialize <<<
 # >>> custom aliases >>>
