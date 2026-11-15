@@ -53,8 +53,9 @@ in
       cd "${config.home.homeDirectory}/.config/home-manager"
       nix flake update
       cd ~/dotfiles
+      current_datetime="$a  %d-%m-%y %T"$a  %d-%m-%y %T
       git add home-manager
-      git commit -m "Home-manager update on $date"
+      git commit -m "Home-manager update on $current_datetime"
       git push
       cd "${config.home.homeDirectory}/.config/home-manager"
       home-manager switch --flake .
