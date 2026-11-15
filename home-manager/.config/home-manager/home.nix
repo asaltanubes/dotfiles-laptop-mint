@@ -52,6 +52,11 @@ in
      (pkgs.writeShellScriptBin "update-home-manager" ''
       cd "${config.home.homeDirectory}/.config/home-manager"
       nix flake update
+      cd ~/dotfiles
+      git add home-manager
+      git commit -m "Home-manager update on $date"
+      git push
+      cd "${config.home.homeDirectory}/.config/home-manager"
       home-manager switch --flake .
       '')
   ] ++ lib.optionals (!isMint) [ pkgs.xreader ];
