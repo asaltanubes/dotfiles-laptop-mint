@@ -18,9 +18,11 @@
   outputs =
     { nixpkgs, home-manager, cspell-lsp, ... }:
     let
-      mkHome={isMint?false, system?"x86_64-linux"}: home-manager.lib.homeManagerConfiguration {
+      mkHome={isMint?false, system?"x86_64-linux", genericLinux?true}:
+        assert !(isMint && !genericLinux) || throw "Linux mint and not generic linux are incompatible";
+       home-manager.lib.homeManagerConfiguration {
         pkgs=nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit cspell-lsp isMint; };
+        extraSpecialArgs = { inherit cspell-lsp isMint genericLinux; };
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.

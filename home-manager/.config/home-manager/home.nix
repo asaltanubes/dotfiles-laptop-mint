@@ -1,4 +1,4 @@
-{ config, pkgs, lib, cspell-lsp, isMint, genericLinux?true, ... }:
+{ config, pkgs, lib, cspell-lsp, isMint, genericLinux, ... }:
 let
   check-hm-updates = pkgs.writeShellApplication {
     name = "check-hm-updates";
