@@ -21,10 +21,10 @@ trap "mv -f flake.lock.backup flake.lock" EXIT
 
 nix flake update
 
-NEW_DERIVATION=$(nix path-info --derivation ".#homeConfigurations.\"asaltanubes\".activationPackage")
-CURRENT_DERIVATION=$(nix path-info --derivation "$HM_PROFILE")
 
-DIFF=$(nix store diff-closures --derivation "$CURRENT_DERIVATION" "$NEW_DERIVATION")
+DIFF=$(home-manager build && nvd diff "$HM_PROFILE" result | tail -n +3)
+trap "mv -f flake.lock.backup flake.lock; rm -rf result" EXIT
+
 if [[ -z "$DIFF" ]]; then
   notify-send "Home-manager updates" "Everything is up to date."
 else

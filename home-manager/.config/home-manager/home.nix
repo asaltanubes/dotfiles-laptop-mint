@@ -2,7 +2,7 @@
 let
   check-hm-updates = pkgs.writeShellApplication {
     name = "check-hm-updates";
-    runtimeInputs = with pkgs; [ nix coreutils libnotify ];
+    runtimeInputs = with pkgs; [ nix coreutils libnotify nvd ];
     text = builtins.readFile ./scripts/update-check.sh;
   };
 in
