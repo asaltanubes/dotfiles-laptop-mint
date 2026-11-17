@@ -1,4 +1,4 @@
-{ config, pkgs, lib, cspell-lsp, isMint, ... }:
+{ config, pkgs, lib, cspell-lsp, isMint, genericLinux?true, ... }:
 let
   check-hm-updates = pkgs.writeShellApplication {
     name = "check-hm-updates";
@@ -11,6 +11,7 @@ in
   # manage.
   home.username = "asaltanubes";
   home.homeDirectory = "/home/asaltanubes";
+  targets.genericLinux.enable = genericLinux;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
