@@ -22,6 +22,8 @@ in
   # release notes.
   home.stateVersion = "26.05"; # Please read the comment before changing.
 
+  news.display = "silent";
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
