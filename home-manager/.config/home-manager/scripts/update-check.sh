@@ -31,3 +31,4 @@ else
   notify-send "Home-manager updates" "$(head -n 20 <<< "$DIFF")"
 fi
 
+nix store gc
